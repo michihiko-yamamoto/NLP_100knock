@@ -1,9 +1,0 @@
-# -*- coding: utf-8 -*-
-
-preflist = []
-for l in open("hightemp.txt","r"):
-    preflist.append(l.strip().split()[0])
-preflist = list(set(preflist))
-sorted(preflist)
-for s in sorted(preflist):
-    print s
